@@ -27,9 +27,13 @@ Hi! I'm Adrian Morton, a B.S. Computer Science student at Florida International 
 ## Tech Stack
 
 **Languages:** Python • C/C++ • Java • SQL • TypeScript • JavaScript • Rust • Arduino
+
 **ML/AI:** PyTorch • TensorFlow • LlamaIndex • LangChain • Google ADK • Qiskit • NumPy • pandas
+
 **Web & Backend:** FastAPI • Next.js • React • Node.js • Flask • RESTful API • Docker
+
 **Databases:** PostgreSQL • pgvector • Vector Databases • Apache Parquet
+
 **Cloud & Tools:** Google Cloud • Git • Linux • Postman • Wireshark
 
 ## Featured Projects
