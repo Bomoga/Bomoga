@@ -4,9 +4,9 @@ Hi! I'm Adrian Morton, a B.S. Computer Science student at Florida International 
 
 ## GitHub Stats
 
-![SCOREBOARD, SCOREBOARD!](https://github-readme-stats.vercel.app/api?username=Bomoga&show_icons=true&theme=radical)
+[![SCOREBOARD, SCOREBOARD!](https://github-readme-stats.vercel.app/api?username=Bomoga&commits_year=2026&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
-![Language Rankings](https://github-readme-stats.vercel.app/api/top-langs/?username=Bomoga&layout=compact&theme=radical)
+[![Language Rankings](https://github-readme-stats.vercel.app/api/top-langs/?username=Bomoga&size_weight=0.5&count_weight=0.5)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Experience
 
