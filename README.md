@@ -11,18 +11,18 @@ Hi! I'm Adrian Morton, a B.S. Computer Science student at Florida International 
 ## Experience
 
 * INIT Build | Team Lead – Fall 2025
-        * Architected the end-to-end ML system, from data ingestion and feature engineering pipelines to model training, evaluation, and deployment in production-like environments.​
-        * Implemented and tuned advanced models (e.g., CatBoost, LightGBM, Temporal Fusion Transformer) with rigorous cross-validation and metric tracking to optimize performance on time-series workloads.
-        * Owned core backend services and experimentation scripts in Python, enforcing code quality via Git workflows, modular design, and reproducible training runs.​
+  * Architected the end-to-end ML system, from data ingestion and feature engineering pipelines to model training, evaluation, and deployment in production-like environments.​
+  * Implemented and tuned advanced models (e.g., CatBoost, LightGBM, Temporal Fusion Transformer) with rigorous cross-validation and metric tracking to optimize performance on time-series workloads.
+  * Owned core backend services and experimentation scripts in Python, enforcing code quality via Git workflows, modular design, and reproducible training runs.​
 
 * INIT Build | Team Lead – Spring 2026
-        * Leading the development of NoteBud, an AI-powered class notebook and study companion built with Python and Typescript that will use retrieval-augmented generation to answer student questions with citations from their own course materials.
-        * Designing RAG pipeline using LlamaIndex/LangChain and Gemini to ingest PDFs/slides, chunk and embed content, process through retrieval ranking, groundedness scoring, and then return informed responses with highlighted evidence.
-        * Developing a full-stack architecture with Next.js frontend, FastAPI backend, PostgreSQL + pgvector, Docker containerization, and Google Cloud object storage to manage users, classes, notebooks, and source files.
+  * Leading the development of NoteBud, an AI-powered class notebook and study companion built with Python and Typescript that will use retrieval-augmented generation to answer student questions with citations from their own course materials.
+  * Designing RAG pipeline using LlamaIndex/LangChain and Gemini to ingest PDFs/slides, chunk and embed content, process through retrieval ranking, groundedness scoring, and then return informed responses with highlighted evidence.
+  * Developing a full-stack architecture with Next.js frontend, FastAPI backend, PostgreSQL + pgvector, Docker containerization, and Google Cloud object storage to manage users, classes, notebooks, and source files.
 ​
 * AI4ALL | Fellow
-        * Developed production-style ML models in Python (and C# where applicable), including Random Forest and XGBoost, to forecast real-world signals with high predictive accuracy.
-        ​* Engineered features, performed hyperparameter tuning, and analyzed error patterns to improve model robustness, documenting pipelines and results for future iteration.​
+  * Developed production-style ML models in Python (and C# where applicable), including Random Forest and XGBoost, to forecast real-world signals with high predictive accuracy.
+  ​* Engineered features, performed hyperparameter tuning, and analyzed error patterns to improve model robustness, documenting pipelines and results for future iteration.​
 
 ## Tech Stack
 
