@@ -22,7 +22,7 @@ Hi! I'm Adrian Morton, a B.S. Computer Science student at Florida International 
 ​
 * AI4ALL | Fellow
   * Developed production-style ML models in Python (and C# where applicable), including Random Forest and XGBoost, to forecast real-world signals with high predictive accuracy.
-  ​* Engineered features, performed hyperparameter tuning, and analyzed error patterns to improve model robustness, documenting pipelines and results for future iteration.​
+  * Engineered features, performed hyperparameter tuning, and analyzed error patterns to improve model robustness, documenting pipelines and results for future iteration.​
 
 ## Tech Stack
 
