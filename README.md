@@ -2,6 +2,8 @@
 
 Hi! I'm Adrian Morton, a B.S. Computer Science student at Florida International University with a deep passion for full-stack engineering and designing complex systems. I'm an INIT Build Team Lead with a continuing drive to develop complex projects to deployment, working synchronously with my team to deliver quality solutions. Most of my work consists of backend engineering with the application of AI/ML technologies and frameworks, solving real-world problems with an efficient modern approach. Currently working on full-stack projects with AI/ML integration to simultaneously develop proficiency in both SWE and MLE.
 
+[Check out my site!](https://bomoga.github.io/)
+
 ## GitHub Stats
 
 ![Stats](./profile/stats.svg)
