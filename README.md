@@ -34,7 +34,7 @@ Hi! I'm Adrian Morton, a B.S. Computer Science student at Florida International 
 
 **Web & Backend:** FastAPI • Next.js • React • Node.js • Flask • RESTful API • Docker
 
-**Databases:** PostgreSQL • pgvector • Vector Databases • Apache Parquet
+**Databases:** PostgreSQL • pgvector • Vector Databases • Apache Parquet • Neo4j
 
 **Cloud & Tools:** Google Cloud • Git • Linux • Postman • Wireshark
 
@@ -42,7 +42,7 @@ Hi! I'm Adrian Morton, a B.S. Computer Science student at Florida International 
 
 ### [NoteBud](https://github.com/Bomoga/NoteBud) | INIT Build Spring 2026
 AI-powered study companion with retrieval-augmented generation. Students ask questions and get answers cited from their own course materials.
-- **Stack:** Next.js, FastAPI, PostgreSQL + pgvector, Docker, Google Cloud
+- **Stack:** Next.js, FastAPI, Neo4j, Docker, Google Cloud
 - **Features:** RAG pipeline with LlamaIndex/Gemini, PDF ingestion, groundedness scoring, highlighted evidence
 
 ### [Prenergyze](https://github.com/Bomoga/Prenergyze) | INIT Build Fall 2025
