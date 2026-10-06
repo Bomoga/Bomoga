@@ -2,7 +2,7 @@
 
 **Software engineer: backend, LLM evaluation, and AI infrastructure.** B.S. Computer Science (Minor in Mathematical Sciences) at Florida International University, graduating May 2027.
 
-I like building systems that prove their own correctness: eval harnesses for production LLMs, deterministic verifiers for AI-generated code, and over-the-air update pipelines for embedded Linux fleets. I'm currently a software engineering intern at **Genuine Labs** and **Portable Diagnostic Systems**, and I've led two INIT Build teams.
+I like building systems that prove their own correctness: eval harnesses for production LLMs, deterministic verifiers for AI-generated code, and over-the-air update pipelines for embedded Linux fleets. I'm currently a software engineering intern at **Genuine Labs** and **Portable Diagnostic Systems**, and I've led three INIT Build teams.
 
 📫 **Open to new-grad SWE roles (from May 2027) and Spring 2027 internships.**
 
@@ -15,7 +15,7 @@ I like building systems that prove their own correctness: eval harnesses for pro
 
 - 🥇 **1st Place, Microsoft sponsor challenge, ShellHacks X** with [Repro](https://github.com/Bomoga/repro)
 - 💼 **Two concurrent SWE internships (2026):** LLM evals at Genuine Labs, OTA updates at Portable Diagnostic Systems
-- 🧭 **2× INIT Build Team Lead** (Fall 2025 and Spring 2026)
+- 🧭 **3× INIT Build Team Lead** (Fall 2025 to present; current project sponsored by Base44)
 - 🎓 **6× Dean's List** at FIU (Spring 2024 through Spring 2026)
 
 ## GitHub Stats
@@ -41,8 +41,11 @@ I like building systems that prove their own correctness: eval harnesses for pro
 - Design and deliver hands-on programming curriculum in Python, Java, and C/C++ for students at every skill level, with a focus on high-school enrichment.
 - Mentor students through project-based work that builds critical thinking, problem-solving, and technical proficiency.
 
-**INIT Build** | Team Lead | *Fall 2025 and Spring 2026*
-- Led student teams from architecture to deployment on [NoteBud](https://github.com/Bomoga/NoteBud) and [Prenergyze](https://github.com/Bomoga/Prenergyze).
+**INIT Build** | Team Lead (3 terms) | *Fall 2025 to present*
+- Leading student teams from architecture to deployment, three terms running.
+- Fall 2026: leading a Base44-sponsored project.
+- Spring 2026: designed [NoteBud](https://github.com/Bomoga/NoteBud)'s full-stack architecture for users, classes, notebooks, and source files.
+- Fall 2025: owned [Prenergyze](https://github.com/Bomoga/Prenergyze)'s Python backend, with reproducible training runs and cross-validated time-series models.
 
 **AI4ALL** | Fellow
 - Built and documented forecasting models with Random Forest and XGBoost, including feature engineering and hyperparameter tuning.
