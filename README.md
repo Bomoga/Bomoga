@@ -1,6 +1,6 @@
 # Hi, I'm Adrian Morton 👋
 
-**Software engineer: backend, LLM evaluation, and AI infrastructure.** B.S. Computer Science (Minor in Mathematical Sciences) at Florida International University, graduating May 2027.
+**Full-stack software engineer: frontend, backend, databases, and AI infrastructure.** B.S. Computer Science (Minor in Mathematical Sciences) at Florida International University, graduating May 2027.
 
 I like building systems that prove their own correctness: eval harnesses for production LLMs, deterministic verifiers for AI-generated code, and over-the-air update pipelines for embedded Linux fleets. I'm currently a software engineering intern at **Genuine Labs** and **Portable Diagnostic Systems**, and I've led three INIT Build teams.
 
