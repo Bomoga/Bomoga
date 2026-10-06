@@ -15,29 +15,83 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      # Cards are rendered into .cards/ first and only copied into profile/
+      # once they pass validation, so an API failure never overwrites a good
+      # card with github-readme-stats' "Something went wrong" error card.
       - name: Generate stats card
+        continue-on-error: true
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=dark
-          path: profile/stats.svg
+          path: .cards/pat/stats.svg
           token: ${{ secrets.GIT_ACCESS_TOKEN }}
 
       - name: Generate top languages card
+        continue-on-error: true
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=dark
-          path: profile/top-langs.svg
+          path: .cards/pat/top-langs.svg
           token: ${{ secrets.GIT_ACCESS_TOKEN }}
 
-      - name: Generate pin card
+      - name: Check cards
+        id: check
+        run: |
+          for card in stats top-langs; do
+            f=".cards/pat/$card.svg"
+            if [ -s "$f" ] && ! grep -q "Something went wrong" "$f"; then
+              echo "${card//-/_}=ok" >> "$GITHUB_OUTPUT"
+            else
+              echo "::warning::$card card failed with GIT_ACCESS_TOKEN; retrying with GITHUB_TOKEN"
+            fi
+          done
+
+      # Fallback: the built-in token only sees public data, but a public-only
+      # card beats an error card.
+      - name: Generate stats card (fallback token)
+        if: steps.check.outputs.stats != 'ok'
+        continue-on-error: true
         uses: readme-tools/github-readme-stats-action@v1
         with:
-          card: pin
-          options: username=readme-tools&repo=github-readme-stats
-          path: profile/pin-readme-tools-github-readme-stats.svg
-          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=dark
+          path: .cards/fallback/stats.svg
+          token: ${{ github.token }}
+
+      - name: Generate top languages card (fallback token)
+        if: steps.check.outputs.top_langs != 'ok'
+        continue-on-error: true
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=dark
+          path: .cards/fallback/top-langs.svg
+          token: ${{ github.token }}
+
+      - name: Install valid cards
+        id: install
+        run: |
+          failed=""
+          for card in stats top-langs; do
+            installed=""
+            for src in pat fallback; do
+              f=".cards/$src/$card.svg"
+              if [ -s "$f" ] && ! grep -q "Something went wrong" "$f"; then
+                cp "$f" "profile/$card.svg"
+                echo "$card: using $src card"
+                installed=1
+                break
+              fi
+            done
+            if [ -z "$installed" ]; then
+              echo "::error::$card card could not be generated; keeping the last good version"
+              grep -o '<tspan[^>]*>[^<]*</tspan>' ".cards/pat/$card.svg" 2>/dev/null | sed 's/<[^>]*>//g' || true
+              failed="$failed $card"
+            fi
+          done
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
       - name: Commit cards
         run: |
@@ -46,3 +100,11 @@ jobs:
           git add profile/*.svg
           git commit -m "Update README cards" || exit 0
           git push
+
+      # Fail the run (and trigger GitHub's failure email) so a broken token
+      # doesn't go unnoticed for months behind a green checkmark.
+      - name: Report failures
+        if: steps.install.outputs.failed != ''
+        run: |
+          echo "::error::Cards not updated:${{ steps.install.outputs.failed }}. Check the GIT_ACCESS_TOKEN secret."
+          exit 1
