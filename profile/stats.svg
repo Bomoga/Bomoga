@@ -8,7 +8,7 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Adrian Morton's GitHub Stats, Rank: B+</title>
+        <title id="titleId">Adrian Morton's GitHub Stats, Rank: A-</title>
         <desc id="descId">Total Stars Earned: 6, Total Commits  (last year) : 1340, Total PRs: 265, Total Issues: 62, Contributed to (last year): 17</desc>
         <style>
           .header {
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 94.27911151375268;
+        stroke-dashoffset: 93.50911331434341;
       }
     }
   
@@ -143,7 +143,7 @@
         <g class="rank-text">
           
         <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          B+
+          A-
         </text>
       
         </g>
