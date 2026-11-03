@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Adrian Morton's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 6, Total Commits  (last year) : 1340, Total PRs: 265, Total Issues: 62, Contributed to (last year): 17</desc>
+        <desc id="descId">Total Stars Earned: 6, Total Commits  (last year) : 1334, Total PRs: 265, Total Issues: 62, Contributed to (last year): 17</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 93.50911331434341;
+        stroke-dashoffset: 93.52622220706056;
       }
     }
   
